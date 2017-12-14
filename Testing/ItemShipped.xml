@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NCIPMessage PUBLIC "-//NISO//NCIP DTD Version 1.0//EN" "http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+    <ItemShipped>
+        <InitiationHeader>
+            <FromAgencyId>
+                <UniqueAgencyId>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                    <Value datatype="string">zv247</Value>
+                </UniqueAgencyId>
+            </FromAgencyId>
+            <ToAgencyId>
+                <UniqueAgencyId>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                    <Value datatype="string">za001</Value>
+                </UniqueAgencyId>
+            </ToAgencyId>
+        </InitiationHeader>
+        <UniqueRequestId>
+            <UniqueAgencyId>
+                <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                <Value datatype="string">zv247</Value>
+            </UniqueAgencyId>
+            <RequestIdentifierValue datatype="string">[TRANSACTION ID]</RequestIdentifierValue>
+        </UniqueRequestId>
+        <UniqueItemId>
+            <UniqueAgencyId>
+                <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                <Value datatype="string">zv247</Value>
+            </UniqueAgencyId>
+            <ItemIdentifierValue datatype="string">[ITEM RECORD NUMBER]</ItemIdentifierValue>
+        </UniqueItemId>
+        <DateShipped datatype="dateTime">2017-06-15T16:01:37Z</DateShipped>
+        <ShippingInformation>
+            <PhysicalAddress>
+                <UnstructuredAddress>
+                    <UnstructuredAddressType>
+                        <Scheme datatype="string">http://www.niso.org/ncip/v1_0/imp1/schemes/unstructuredaddresstype/</Scheme>
+                        <Value datatype="string">Pickup Location</Value>
+                    </UnstructuredAddressType>
+                    <UnstructuredAddressData datatype="string">[PICKUP LOCATION]</UnstructuredAddressData>
+                </UnstructuredAddress>
+                <PhysicalAddressType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=PhysicalAddressType</Scheme>
+                    <Value datatype="string">Pickup Location</Value>
+                </PhysicalAddressType>
+            </PhysicalAddress>
+            <ShippingNote datatype="string">[DELIVERY STOP]</ShippingNote>
+        </ShippingInformation>
+        <ItemOptionalFields>
+            <BibliographicDescription>
+                <Author datatype="string">[AUTHOR]</Author>
+                <Title datatype="string">[TITLE]</Title>
+                <MediumType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=MediumType</Scheme>
+                    <Value datatype="string">MeL Book</Value>
+                </MediumType>
+            </BibliographicDescription>
+            <ItemDescription>
+                <VisibleItemId>
+                    <VisibleItemIdentifierType>
+                        <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleItemIdentifierType</Scheme>
+                        <Value datatype="string">Barcode</Value>
+                    </VisibleItemIdentifierType>
+                    <VisibleItemIdentifier datatype="string">[ITEM BARCODE]</VisibleItemIdentifier>
+                </VisibleItemId>
+                <CallNumber datatype="string">[CALL NUMBER]</CallNumber>
+            </ItemDescription>
+        </ItemOptionalFields>
+    </ItemShipped>
+</NCIPMessage>

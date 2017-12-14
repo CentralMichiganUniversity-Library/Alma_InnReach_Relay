@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NCIPMessage PUBLIC "-//NISO//NCIP DTD Version 1.0//EN" "http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+    <ItemRequested>
+        <InitiationHeader>
+            <FromAgencyId>
+                <UniqueAgencyId>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                    <Value datatype="string">zv010</Value>
+                </UniqueAgencyId>
+            </FromAgencyId>
+            <ToAgencyId>
+                <UniqueAgencyId>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                    <Value datatype="string">za001</Value>
+                </UniqueAgencyId>
+            </ToAgencyId>
+        </InitiationHeader>
+        <UniqueUserId>
+            <UniqueAgencyId>
+                <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                <Value datatype="string">za001</Value>
+            </UniqueAgencyId>
+            <UserIdentifierValue datatype="string">[PATRON RECORD NUMBER]</UserIdentifierValue>
+        </UniqueUserId>
+        <UniqueItemId>
+            <UniqueAgencyId>
+                <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                <Value datatype="string">zv010</Value>
+            </UniqueAgencyId>
+            <ItemIdentifierValue datatype="string">[ITEM RECORD NUMBER]</ItemIdentifierValue>
+        </UniqueItemId>
+        <RequestType>
+            <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=RequestType</Scheme>
+            <Value datatype="string">hold</Value>
+        </RequestType>
+        <RequestScopeType>
+            <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=RequestScopeType</Scheme>
+            <Value datatype="string">item</Value>
+        </RequestScopeType>
+        <DateOfUserRequest datatype="dateTime">2017-06-15T16:00:45Z</DateOfUserRequest>
+        <ItemOptionalFields>
+            <BibliographicDescription>
+                <Author datatype="string">[AUTHOR]</Author>
+                <Title datatype="string">[TITLE].</Title>
+                <MediumType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=MediumType</Scheme>
+                    <Value datatype="string">MeL Book</Value>
+                </MediumType>
+            </BibliographicDescription>
+            <ItemDescription>
+                <CallNumber datatype="string">[CALL NUMBER]</CallNumber>
+            </ItemDescription>
+        </ItemOptionalFields>
+        <UserOptionalFields>
+            <VisibleUserId>
+                <VisibleUserIdentifierType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleUserIdentifierType</Scheme>
+                    <Value datatype="string">Barcode</Value>
+                </VisibleUserIdentifierType>
+                <VisibleUserIdentifier datatype="string">[PATRON BARCODE]</VisibleUserIdentifier>
+            </VisibleUserId>
+            <UserPrivilege>
+                <UniqueAgencyId>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+                    <Value datatype="string">za001</Value>
+                </UniqueAgencyId>
+                <AgencyUserPrivilegeType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=AgencyUserPrivilegeType</Scheme>
+                    <Value datatype="string">MeL Public Library Adult</Value>
+                </AgencyUserPrivilegeType>
+            </UserPrivilege>
+        </UserOptionalFields>
+        <ShippingInformation>
+            <PhysicalAddress>
+                <UnstructuredAddress>
+                    <UnstructuredAddressType>
+                        <Scheme datatype="string">http://www.niso.org/ncip/v1_0/imp1/schemes/unstructuredaddresstype/</Scheme>
+                        <Value datatype="string">Pickup Location</Value>
+                    </UnstructuredAddressType>
+                    <UnstructuredAddressData datatype="string">[PICKUP LOCATION]</UnstructuredAddressData>
+                </UnstructuredAddress>
+                <PhysicalAddressType>
+                    <Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=PhysicalAddressType</Scheme>
+                    <Value datatype="string">Pickup Location</Value>
+                </PhysicalAddressType>
+            </PhysicalAddress>
+            <ShippingNote datatype="string">[DELIVERY STOP]</ShippingNote>
+        </ShippingInformation>
+    </ItemRequested>
+</NCIPMessage>
+

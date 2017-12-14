@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NCIPMessage PUBLIC "-//NISO//NCIP DTD Version 1.0//EN" "http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd"[]>
+<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+	<LookupUser>
+		<InitiationHeader>
+			<FromAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">melir</Value>
+				</UniqueAgencyId>
+			</FromAgencyId>
+			<ToAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">za001</Value>
+				</UniqueAgencyId>
+			</ToAgencyId>
+		</InitiationHeader>
+		<VisibleUserId>
+			<VisibleUserIdentifierType>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleUserIdentifierType</Scheme>
+				<Value datatype="string">Barcode</Value>
+			</VisibleUserIdentifierType>
+			<VisibleUserIdentifier datatype="string">crons1eg</VisibleUserIdentifier>
+		</VisibleUserId>
+		<UserElementType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UserElementType</Scheme>
+			<Value datatype="string">Block Or Trap</Value>
+		</UserElementType>
+		<UserElementType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UserElementType</Scheme>
+			<Value datatype="string">Name Information</Value>
+		</UserElementType>
+		<UserElementType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UserElementType</Scheme>
+			<Value datatype="string">User Address Information</Value>
+		</UserElementType>
+		<UserElementType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UserElementType</Scheme>
+			<Value datatype="string">User Privilege</Value>
+		</UserElementType>
+		<UserElementType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UserElementType</Scheme>
+			<Value datatype="string">Visible User Id</Value>
+		</UserElementType>
+	</LookupUser>
+</NCIPMessage>

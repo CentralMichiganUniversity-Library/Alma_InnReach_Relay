@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NCIPMessage PUBLIC "-//NISO//NCIP DTD Version 1.0//EN" "http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd"[]>
+<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+	<ItemRenewed>
+		<InitiationHeader>
+			<FromAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">zymtc</Value>
+				</UniqueAgencyId>
+			</FromAgencyId>
+			<ToAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">zymta</Value>
+				</UniqueAgencyId>
+			</ToAgencyId>
+		</InitiationHeader>
+		<UniqueUserId>
+			<UniqueAgencyId>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">zymta</Value>
+			</UniqueAgencyId>
+			<UserIdentifierValue datatype="string">22183005300106</UserIdentifierValue>
+		</UniqueUserId>
+		<UniqueItemId>
+			<UniqueAgencyId>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">zymtc</Value>
+			</UniqueAgencyId>
+			<ItemIdentifierValue datatype="string">i4812183</ItemIdentifierValue>
+		</UniqueItemId>
+		<DateDue datatype="dateTime">2017-08-25T08:00:00Z</DateDue>
+		<ItemOptionalFields>
+			<BibliographicDescription>
+				<Author datatype="string">Dudek, Megan</Author>
+				<Title datatype="string">iii zymtc cocktail shaker test</Title>
+				<MediumType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=MediumType</Scheme>
+					<Value datatype="string">MeL Book</Value>
+				</MediumType>
+			</BibliographicDescription>
+			<ItemDescription>
+				<VisibleItemId>
+					<VisibleItemIdentifierType>
+						<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleItemIdentifierType</Scheme>
+						<Value datatype="string">Barcode</Value>
+					</VisibleItemIdentifierType>
+					<VisibleItemIdentifier datatype="string">3873400178</VisibleItemIdentifier>
+				</VisibleItemId>
+			</ItemDescription>
+		</ItemOptionalFields>
+		<UserOptionalFields>
+			<VisibleUserId>
+				<VisibleUserIdentifierType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleUserIdentifierType</Scheme>
+					<Value datatype="string">Barcode</Value>
+				</VisibleUserIdentifierType>
+				<VisibleUserIdentifier datatype="string">22183005300106</VisibleUserIdentifier>
+			</VisibleUserId>
+			<UserPrivilege>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">zymta</Value>
+				</UniqueAgencyId>
+				<AgencyUserPrivilegeType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=AgencyUserPrivilegeType</Scheme>
+					<Value datatype="string">MeL Public Library Adult</Value>
+				</AgencyUserPrivilegeType>
+			</UserPrivilege>
+		</UserOptionalFields>
+	</ItemRenewed>
+</NCIPMessage>

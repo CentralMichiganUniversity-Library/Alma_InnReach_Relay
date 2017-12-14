@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NCIPMessage PUBLIC "-//NISO//NCIP DTD Version 1.0//EN" "http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+<NCIPMessage version="http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd">
+	<AcceptItem>
+		<InitiationHeader>
+			<FromAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">zv012</Value>
+				</UniqueAgencyId>
+			</FromAgencyId>
+			<ToAgencyId>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">01CMICH_INST</Value>
+				</UniqueAgencyId>
+			</ToAgencyId>
+			<ApplicationProfileType>
+				<Scheme datatype="string">http://www.niso.org/ncip/v1_0/imp1/dtd/ncip_v1_0.dtd?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">MeL</Value>
+			</ApplicationProfileType>
+		</InitiationHeader>
+		<MandatedAction>
+			<DateEventOccurred datatype="dateTime">2017-06-15T16:00:52Z</DateEventOccurred>
+		</MandatedAction>
+		<UniqueRequestId>
+			<UniqueAgencyId>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">zv012</Value>
+			</UniqueAgencyId>
+			<RequestIdentifierValue datatype="string">sky259921430</RequestIdentifierValue>
+		</UniqueRequestId>
+		<RequestedActionType>
+			<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=RequestedActionType</Scheme>
+			<Value datatype="string">Hold for Pickup</Value>
+		</RequestedActionType>
+		<UniqueUserId>
+			<UniqueAgencyId>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">01CMICH_INST</Value>
+			</UniqueAgencyId>
+			<UserIdentifierValue datatype="string">22183005300106</UserIdentifierValue>
+		</UniqueUserId>
+		<UniqueItemId>
+			<UniqueAgencyId>
+				<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+				<Value datatype="string">zv012</Value>
+			</UniqueAgencyId>
+			<ItemIdentifierValue datatype="string">crons1eg</ItemIdentifierValue>
+		</UniqueItemId>
+		<ItemOptionalFields>
+			<BibliographicDescription>
+				<Title datatype="string">Natural histories : extraordinary rare book selections from the American Museum of Natural History Library</Title>
+				<MediumType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=MediumType</Scheme>
+					<Value datatype="string">MeL Book</Value>
+				</MediumType>
+			</BibliographicDescription>
+			<ItemDescription>
+				<VisibleItemId>
+					<VisibleItemIdentifierType>
+						<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleItemIdentifierType</Scheme>
+						<Value datatype="string">Barcode</Value>
+					</VisibleItemIdentifierType>
+					<VisibleItemIdentifier datatype="string">1454912146</VisibleItemIdentifier>
+				</VisibleItemId>
+				<CallNumber datatype="string">Z 7409 .N273 2014</CallNumber>
+			</ItemDescription>
+		</ItemOptionalFields>
+		<UserOptionalFields>
+			<VisibleUserId>
+				<VisibleUserIdentifierType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=VisibleUserIdentifierType</Scheme>
+					<Value datatype="string">Barcode</Value>
+				</VisibleUserIdentifierType>
+				<VisibleUserIdentifier datatype="string">[PATRON BARCODE]</VisibleUserIdentifier>
+			</VisibleUserId>
+			<UserPrivilege>
+				<UniqueAgencyId>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=UniqueAgencyId</Scheme>
+					<Value datatype="string">01CMICH_INST</Value>
+				</UniqueAgencyId>
+				<AgencyUserPrivilegeType>
+					<Scheme datatype="string">http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&amp;scheme=AgencyUserPrivilegeType</Scheme>
+					<Value datatype="string">MeL Public Library Adult</Value>
+				</AgencyUserPrivilegeType>
+			</UserPrivilege>
+		</UserOptionalFields>
+	</AcceptItem>
+</NCIPMessage>  
