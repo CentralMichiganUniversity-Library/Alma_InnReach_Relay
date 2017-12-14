@@ -24,6 +24,7 @@ namespace AlmaNcipRelay
         public static string CheckoutApIUrl { get; private set; }
         public static string ChangeDateApiUrl { get; private set; }
         public static string GetLoansApiUrl { get; private set; }
+        public static string InnReachUserIdSchemeTag { get; private set; }
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -38,11 +39,12 @@ namespace AlmaNcipRelay
             AlmaNcipProfileCode = ConfigurationManager.AppSettings["AlmaNcipProfileCode"];
             InnReachUserGroup = ConfigurationManager.AppSettings["InnReachUserGroup"];
             UpgradeItemCheckOutRequest = ConfigurationManager.AppSettings["UpgradeItemCheckOutRequest"] == "true";
-            APICheckoutLibrary = ConfigurationManager.AppSettings["APICheckoutLibrary"];
-            APiCheckoutDesk = ConfigurationManager.AppSettings["APiCheckoutDesk"];
+            APICheckoutLibrary = ConfigurationManager.AppSettings["ApiCheckoutLibrary"];
+            APiCheckoutDesk = ConfigurationManager.AppSettings["ApiCheckoutDesk"];
             CheckoutApIUrl = ConfigurationManager.AppSettings["CheckoutApIUrl"];
             ChangeDateApiUrl = ConfigurationManager.AppSettings["ChangeDateApiUrl"];
             GetLoansApiUrl = ConfigurationManager.AppSettings["GetLoansApiUrl"];
+            InnReachUserIdSchemeTag = ConfigurationManager.AppSettings["InnReachUserIdSchemeTag"];
         }
     }
 }

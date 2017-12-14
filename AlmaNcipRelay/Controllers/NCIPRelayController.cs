@@ -117,7 +117,7 @@ namespace AlmaNcipRelay.Controllers
 
                     XmlElement scheme = melRequest.CreateElement("Scheme");
                     scheme.SetAttribute("datatype", "string");
-                    scheme.InnerText = "http://72.52.134.169:6601/IRCIRCD?target=get_scheme_values&;scheme=VisibleUserIdentifierType";
+                    scheme.InnerText = MvcApplication.InnReachUserIdSchemeTag;
                     agaencyId.AppendChild(scheme);
 
                     XmlElement value = melRequest.CreateElement("Value");
@@ -431,6 +431,7 @@ namespace AlmaNcipRelay.Controllers
 
                 using (var requestStream = almaNcip.GetRequestStream())
                 {
+                    //.NET internally represents strings as utf-16.  Alma did not like that.
                     byte[] postData = System.Text.Encoding.UTF8.GetBytes(XmlToString(loan).Replace("<?xml version=\"1.0\" encoding=\"utf-16\"?>", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"));
                     requestStream.Write(postData, 0, postData.Length);
                 }
