@@ -14,8 +14,8 @@ This solution has been tested on Windows Server 2012 R2 & IIS 8.  It should be d
 There are a number of configuration fields in the web.config file that will need to be filled in with your institution-specific values.  Some of the settings are pre-filled with examples.
 
 - **AlmaNcipUrl:**  The URL of the Alma NCIP responder.  DCB operates on NCIP version 1, so the v1 responder should be used.
-- **InnReachAgencyIdSchemeTag:**  The value of the <Scheme> element expected by DCB for interpreting the agency id.  Used to convert NCIP responses from Alma for DCB.  The address in the URL should be the address of the DBC system.
-- **InnReachUserIdSchemeTag:**  The value of the <Scheme> element expected by DBC for inturpreting the user id.  Used to convert NCIP responses from Alma for DCB.  The address in the URL should be the address of the DBC system.
+- **InnReachAgencyIdSchemeTag:**  The value of the Scheme element expected by DCB for interpreting the agency id.  Used to convert NCIP responses from Alma for DCB.  The address in the URL should be the address of the DBC system.
+- **InnReachUserIdSchemeTag:**  The value of the Scheme element expected by DBC for inturpreting the user id.  Used to convert NCIP responses from Alma for DCB.  The address in the URL should be the address of the DBC system.
 - **AlmaInstitutionCode:**  The institution code assigned to you by ExLibris.
 - **AlmaInstitutionName:**  The institution name according to ExLibris.
 - **InnReachUserGroup:**  The patron type that will be sent to DCB for LookUpUser NCIP service requests.  If you need to differentiate between different patrons in DCB you will need to create your own mapping process to convert Alma user groups to DCB patron types.
@@ -32,14 +32,14 @@ There are a number of configuration fields in the web.config file that will need
 When processing an NCIP request the relay will modify the original request message from the DCB system for Alma and the response from Alma will be modified to return to the DCB system.  
 
 ### DCB -> Alma
-As described by Moshe Shechter in his post on the Alma Developer Network [here](https://developers.exlibrisgroup.com/blog/Alma-NCIP-Requirements-and-InnReach), the relay will swap out the DCB site code in the <AgencyId> elements with the Alma institution code.  It will also add in the <ApplicationProfileType> element that contains the resource sharing partner code you define in Alma.  This information instructs Alma what customer the request is meant for and what resource sharing partner defined for that customer to use to process the request.
+As described by Moshe Shechter in his post on the Alma Developer Network [here](https://developers.exlibrisgroup.com/blog/Alma-NCIP-Requirements-and-InnReach), the relay will swap out the DCB site code in the AgencyId elements with the Alma institution code.  It will also add in the ApplicationProfileType element that contains the resource sharing partner code you define in Alma.  This information instructs Alma what customer the request is meant for and what resource sharing partner defined for that customer to use to process the request.
 
 In testing the relay with MeL, we noticed that when a patron would requested an item from their website they would have to type in their barcode.  We wanted our patrons to use a friendlier identifier that we also use as the primary identifier in Alma.  As a result, what the DCB system considers the barcode Alma considers the primary identifier.  The patron's barcode value according to Alma is stored in the "NCIP ID" index in DCB.  To implement this the relay will swap the UniqueUserId with the VisibleUserId in the NCIP message for each request those elements are present.
 
 ### Alma -> DCB
-To prepare an NCIP response from Alma for a DCB system, the relay will swap out the Alma institution code in the <AgencyId> element back to the DCB site code.  The barcode <-> primary ID swapping also takes place here, but in reverse.  Other cleanup such as reverting the <Scheme> element value and replacing the institution name with the DCB site code happens here as well.
+To prepare an NCIP response from Alma for a DCB system, the relay will swap out the Alma institution code in the AgencyId element back to the DCB site code.  The barcode <-> primary ID swapping also takes place here, but in reverse.  Other cleanup such as reverting the Scheme element value and replacing the institution name with the DCB site code happens here as well.
 
-For certain NCIP service types, Alma will return a generic response message.  This was causing errors in the DCB system.  e.g if DCB sends an ItemCheckedOut request it expects an NCIP message with the <ItemCheckedOutResponse> element as the first child of the <NCIPMessage> root node, however Alma was sending a <Response> element instead.  To correct for this, the message type from the original request is used to replace the generic response element name.
+For certain NCIP service types, Alma will return a generic response message.  This was causing errors in the DCB system.  e.g if DCB sends an ItemCheckedOut request it expects an NCIP message with the ItemCheckedOutResponse element as the first child of the NCIPMessage root node, however Alma was sending a Response element instead.  To correct for this, the message type from the original request is used to replace the generic response element name.
 
 In testing we also noticed that DCB required patron email addresses to be sent differently than Alma was structuring them.  For NCIP responses that contain a patron email address, like the LookUpUserResponse, the email address will be moved to the correct element.
 
